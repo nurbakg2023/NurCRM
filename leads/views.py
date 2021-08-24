@@ -12,7 +12,7 @@ from agents.mixins import OrganisorAndLoginRequiredMixin
 # CRUD+L - Create, Retrieve, Update and Delete + List
 
 
-class SignupView(LoginRequiredMixin, generic.CreateView):
+class SignupView(generic.CreateView):
     template_name = 'registration/signup.html'
     form_class = CustomUserCreationForm
 
